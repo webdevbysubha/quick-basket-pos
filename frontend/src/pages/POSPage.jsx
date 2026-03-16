@@ -117,7 +117,7 @@ const POSPage = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-[calc(100vh-6rem)]">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-[calc(100vh-8rem)] lg:h-[calc(100vh-7rem)] mb-2">
       
       {/* LEFT SIDE: Scanner and Manual Entry */}
       <div className="lg:col-span-8 space-y-6 flex flex-col h-full">

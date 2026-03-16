@@ -2,6 +2,7 @@ import { Outlet, Link, useLocation } from 'react-router-dom';
 import { ShoppingCart, Package } from 'lucide-react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Footer';
 
 const Layout = () => {
   const location = useLocation();
@@ -40,6 +41,8 @@ const Layout = () => {
       <main className="flex-1 container mx-auto p-4 sm:p-6 lg:p-6 relative z-10 w-full max-w-[1400px]">
         <Outlet />
       </main>
+      
+      <Footer />
       
       {/* Global Toast Notifications Container */}
       <ToastContainer 
