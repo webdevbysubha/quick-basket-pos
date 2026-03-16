@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: "https://quick-basket-pos.onrender.com/api"
+  baseURL: 'https://quick-basket-pos.onrender.com/api'
 });
 
 export const productAPI = {

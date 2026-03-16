@@ -24,7 +24,7 @@ const BarcodeScanner = ({ onScan }) => {
   }, [lastScanned, onScan]);
 
   return (
-    <div className="flex flex-col h-full bg-card rounded-2xl w-full">
+    <div className="flex flex-col bg-card rounded-2xl w-full">
       <div className="flex justify-between items-center p-4 border-b border-slate-100 shrink-0">
         <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
           <ScanLine className="w-5 h-5 text-primary"/>
@@ -38,7 +38,7 @@ const BarcodeScanner = ({ onScan }) => {
         </button>
       </div>
       
-      <div className="flex-1 bg-[#1a1c23] relative flex items-center justify-center overflow-hidden">
+      <div className="w-full relative bg-[#1a1c23] flex items-center justify-center overflow-hidden min-h-[300px]">
         {cameraActive ? (
           <BarcodeScannerComponent
             width="100%"

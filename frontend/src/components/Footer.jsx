@@ -6,14 +6,14 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-slate-200 shadow-[0_-4px_25px_-10px_rgba(0,0,0,0.06)] w-full mt-4 md:mt-8 rounded-t-3xl relative z-20 overflow-hidden">
+    <footer className="w-full mt-2 md:mt-4 bg-white border-t border-slate-200 shadow-[0_-4px_25px_-10px_rgba(0,0,0,0.06)] rounded-t-3xl pb-6">
       {/* Optional: Very subtle top accent line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10"></div>
       
       <div className="max-w-6xl mx-auto px-6 pt-12 pb-8">
         
         {/* Top Section - 3 Column Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-start mb-10 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-start mb-10 text-center md:text-left space-y-6 md:space-y-0">
           
           {/* LEFT SECTION - Brand */}
           <div className="flex flex-col items-center md:items-start space-y-3">
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
 
           {/* CENTER SECTION - Links */}
-          <div className="flex flex-col items-center md:items-start lg:pl-12">
+          <div className="flex flex-col items-center md:items-start md:mx-auto">
             <h3 className="text-slate-800 font-bold mb-5 uppercase tracking-wider text-sm flex items-center">
               Useful Links
             </h3>
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
 
           {/* RIGHT SECTION - Socials */}
-          <div className="flex flex-col items-center md:items-start lg:ml-auto">
+          <div className="flex flex-col items-center md:items-start md:ml-auto">
             <h3 className="text-slate-800 font-bold mb-5 uppercase tracking-wider text-sm">CONNECT</h3>
             <div className="flex gap-4">
               <a href="https://www.linkedin.com/in/subha-mondal10/" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-100 text-slate-400 hover:text-[#0A66C2] hover:bg-blue-50 hover:shadow-md hover:scale-110 hover:-translate-y-1 rounded-full transition-all duration-300 ease-in-out" title="LinkedIn">

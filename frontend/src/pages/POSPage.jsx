@@ -117,10 +117,10 @@ const POSPage = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-[calc(100vh-8rem)] lg:h-[calc(100vh-7rem)] mb-2">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full pb-2">
       
       {/* LEFT SIDE: Scanner and Manual Entry */}
-      <div className="lg:col-span-8 space-y-6 flex flex-col h-full">
+      <div className="lg:col-span-8 space-y-6 flex flex-col">
         
         {/* Quick Registration Card */}
         <div className="bg-card p-6 rounded-2xl shadow-md border border-slate-100 flex flex-col gap-4 animate-fade-in shrink-0 mt-2">
@@ -149,14 +149,14 @@ const POSPage = () => {
         </div>
         
         {/* Live Viewfinder Card */}
-        <div className="bg-card rounded-2xl shadow-md border border-slate-100 flex-1 flex flex-col overflow-hidden animate-fade-in mb-2 mt-2 object-cover">
+        <div className="bg-card rounded-2xl shadow-md border border-slate-100 flex flex-col overflow-hidden animate-fade-in mb-2 mt-2 object-cover">
           <BarcodeScanner onScan={handleScan} />
         </div>
         
       </div>
       
       {/* RIGHT SIDE: Cart */}
-      <div className="lg:col-span-4 h-full animate-slide-in-right mt-2 pb-2">
+      <div className="lg:col-span-4 animate-slide-in-right mt-2 pb-2">
         <Cart 
           items={cartItems} 
           onUpdateQuantity={updateQuantity} 
